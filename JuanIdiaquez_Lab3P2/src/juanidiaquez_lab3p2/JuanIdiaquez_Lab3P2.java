@@ -112,27 +112,24 @@ public class JuanIdiaquez_Lab3P2 {
                 case 4:
                     System.out.println("Los Vehiculos existentes son: ");
                     System.out.println();
-                     System.out.println("Automoviles:");
+                    System.out.println("Automoviles:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+""+Vehiculos.get(i));
                         if (Vehiculos.get(i) instanceof Automovil){
-                            System.out.println((Vehiculo)Vehiculos.get(i));
+                            System.out.println(i+"."+(Vehiculo)Vehiculos.get(i));
                         }
                     }
                     System.out.println();
                     System.out.println("Motociclestas:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+""+Vehiculos.get(i));
-                        if (Vehiculos.get(i) instanceof Motocicleta){
-                            System.out.println((Motocicleta)Vehiculos.get(i));
+                        if (Vehiculos.get(i) instanceof Motocicleta motocicleta){
+                            System.out.println(i+"."+motocicleta);
                         }
                     }
                     System.out.println();
                     System.out.println("Autobuses:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+""+Vehiculos.get(i));
-                        if (Vehiculos.get(i) instanceof Autobus){
-                            System.out.println((Autobus)Vehiculos.get(i));
+                        if (Vehiculos.get(i) instanceof Autobus autobus){
+                            System.out.println(i+"."+autobus);
                         }
                     }
                     System.out.println("Marque la posicion del vehiculo a modificar");
@@ -211,33 +208,34 @@ public class JuanIdiaquez_Lab3P2 {
                     break;
                 case 5:
                     System.out.println("Los Vehiculos existentes son: ");
-                    System.out.println();
-                     System.out.println("Automoviles:");
+                    System.out.println("Automoviles:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+"."+Vehiculos.get(i));
                         if (Vehiculos.get(i) instanceof Automovil){
-                            System.out.println((Vehiculo)Vehiculos.get(i));
+                            System.out.println(i+"."+(Vehiculo)Vehiculos.get(i));
                         }
                     }
                     System.out.println();
                     System.out.println("Motociclestas:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+"."+Vehiculos.get(i));
-                        if (Vehiculos.get(i) instanceof Motocicleta){
-                            System.out.println((Motocicleta)Vehiculos.get(i));
+                        if (Vehiculos.get(i) instanceof Motocicleta motocicleta){
+                            System.out.println(i+"."+motocicleta);
                         }
                     }
                     System.out.println();
                     System.out.println("Autobuses:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+"."+Vehiculos.get(i));
-                        if (Vehiculos.get(i) instanceof Autobus){
-                            System.out.println((Autobus)Vehiculos.get(i));
+                        if (Vehiculos.get(i) instanceof Autobus autobus){
+                            System.out.println(i+"."+autobus);
                         }
                     }
                     System.out.println("Marque la posicion del vehiculo a eliminar");
                     int remove=pd.nextInt();
-                    Vehiculos.remove(remove);
+                    if (Vehiculos.size()>-1) {
+                     Vehiculos.remove(remove); 
+                    }else{
+                        System.out.println("No puede eliminar debido a que no tiene vehiculos");
+                    }
+
                     break;
                 case 6:
                     System.out.println("Automoviles:");
@@ -266,25 +264,22 @@ public class JuanIdiaquez_Lab3P2 {
                     System.out.println();
                      System.out.println("Automoviles:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+"."+Vehiculos.get(i));
                         if (Vehiculos.get(i) instanceof Automovil){
-                            System.out.println((Vehiculo)Vehiculos.get(i));
+                            System.out.println(i+"."+(Vehiculo)Vehiculos.get(i));
                         }
                     }
                     System.out.println();
                     System.out.println("Motociclestas:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+"."+Vehiculos.get(i));
-                        if (Vehiculos.get(i) instanceof Motocicleta){
-                            System.out.println((Motocicleta)Vehiculos.get(i));
+                        if (Vehiculos.get(i) instanceof Motocicleta motocicleta){
+                            System.out.println(i+"."+motocicleta);
                         }
                     }
                     System.out.println();
                     System.out.println("Autobuses:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+"."+Vehiculos.get(i));
-                        if (Vehiculos.get(i) instanceof Autobus){
-                            System.out.println((Autobus)Vehiculos.get(i));
+                        if (Vehiculos.get(i) instanceof Autobus autobus){
+                            System.out.println(i+"."+autobus);
                         }
                     }
                     System.out.println("Marque la posicion del vehiculo a voletar");
