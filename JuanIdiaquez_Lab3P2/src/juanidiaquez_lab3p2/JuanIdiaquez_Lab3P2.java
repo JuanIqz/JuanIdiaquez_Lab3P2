@@ -230,7 +230,7 @@ public class JuanIdiaquez_Lab3P2 {
                     }
                     System.out.println("Marque la posicion del vehiculo a eliminar");
                     int remove=pd.nextInt();
-                    if (Vehiculos.size()>-1) {
+                    if (!Vehiculos.isEmpty()) {
                      Vehiculos.remove(remove); 
                     }else{
                         System.out.println("No puede eliminar debido a que no tiene vehiculos");
@@ -313,5 +313,6 @@ public class JuanIdiaquez_Lab3P2 {
             }
         }
     }
+
     
 }
