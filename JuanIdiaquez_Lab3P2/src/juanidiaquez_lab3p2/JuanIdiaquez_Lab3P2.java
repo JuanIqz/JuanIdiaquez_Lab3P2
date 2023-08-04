@@ -214,7 +214,7 @@ public class JuanIdiaquez_Lab3P2 {
                     System.out.println();
                      System.out.println("Automoviles:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+""+Vehiculos.get(i));
+                        System.out.println(i+"."+Vehiculos.get(i));
                         if (Vehiculos.get(i) instanceof Automovil){
                             System.out.println((Vehiculo)Vehiculos.get(i));
                         }
@@ -222,7 +222,7 @@ public class JuanIdiaquez_Lab3P2 {
                     System.out.println();
                     System.out.println("Motociclestas:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+""+Vehiculos.get(i));
+                        System.out.println(i+"."+Vehiculos.get(i));
                         if (Vehiculos.get(i) instanceof Motocicleta){
                             System.out.println((Motocicleta)Vehiculos.get(i));
                         }
@@ -230,7 +230,7 @@ public class JuanIdiaquez_Lab3P2 {
                     System.out.println();
                     System.out.println("Autobuses:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+""+Vehiculos.get(i));
+                        System.out.println(i+"."+Vehiculos.get(i));
                         if (Vehiculos.get(i) instanceof Autobus){
                             System.out.println((Autobus)Vehiculos.get(i));
                         }
@@ -242,25 +242,22 @@ public class JuanIdiaquez_Lab3P2 {
                 case 6:
                     System.out.println("Automoviles:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+""+Vehiculos.get(i));
                         if (Vehiculos.get(i) instanceof Automovil){
-                            System.out.println((Vehiculo)Vehiculos.get(i));
+                            System.out.println(i+"."+(Vehiculo)Vehiculos.get(i));
                         }
                     }
                     System.out.println();
                     System.out.println("Motociclestas:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+""+Vehiculos.get(i));
-                        if (Vehiculos.get(i) instanceof Motocicleta){
-                            System.out.println((Motocicleta)Vehiculos.get(i));
+                        if (Vehiculos.get(i) instanceof Motocicleta motocicleta){
+                            System.out.println(i+"."+motocicleta);
                         }
                     }
                     System.out.println();
                     System.out.println("Autobuses:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+""+Vehiculos.get(i));
-                        if (Vehiculos.get(i) instanceof Autobus){
-                            System.out.println((Autobus)Vehiculos.get(i));
+                        if (Vehiculos.get(i) instanceof Autobus autobus){
+                            System.out.println(i+"."+autobus);
                         }
                     }
                     break;
@@ -269,7 +266,7 @@ public class JuanIdiaquez_Lab3P2 {
                     System.out.println();
                      System.out.println("Automoviles:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+""+Vehiculos.get(i));
+                        System.out.println(i+"."+Vehiculos.get(i));
                         if (Vehiculos.get(i) instanceof Automovil){
                             System.out.println((Vehiculo)Vehiculos.get(i));
                         }
@@ -277,7 +274,7 @@ public class JuanIdiaquez_Lab3P2 {
                     System.out.println();
                     System.out.println("Motociclestas:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+""+Vehiculos.get(i));
+                        System.out.println(i+"."+Vehiculos.get(i));
                         if (Vehiculos.get(i) instanceof Motocicleta){
                             System.out.println((Motocicleta)Vehiculos.get(i));
                         }
@@ -285,7 +282,7 @@ public class JuanIdiaquez_Lab3P2 {
                     System.out.println();
                     System.out.println("Autobuses:");
                     for (int i = 0; i < Vehiculos.size(); i++) {
-                        System.out.println(i+""+Vehiculos.get(i));
+                        System.out.println(i+"."+Vehiculos.get(i));
                         if (Vehiculos.get(i) instanceof Autobus){
                             System.out.println((Autobus)Vehiculos.get(i));
                         }

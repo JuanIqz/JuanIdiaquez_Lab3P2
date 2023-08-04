@@ -12,12 +12,12 @@ import java.util.Date;
  * @author User
  */
 public class Vehiculo {
-    private String Placa;
-    private String Marca;
-    private String Modelo;
-    private String Tipo;
-    private Color Color;
-    private Date Año;
+     String Placa;
+     String Marca;
+     String Modelo;
+     String Tipo;
+     Color Color;
+     Date Año;
 
     public String getPlaca() {
         return Placa;
